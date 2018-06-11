@@ -1,4 +1,4 @@
-#The tutorial of how to install oh-my-zsh
+The tutorial of how to install oh-my-zsh
 ---
 
 ##### 1. You need to install **Zsh** first:
@@ -28,7 +28,8 @@
         sh -c "$wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)
     ```
 -----
-#OPTIONAL PART
+
+# OPTIONAL PART
 ##### 6. Plugins:
 - You can use the _.zshrc_ file I uploaded to github
 it uses:
@@ -43,7 +44,7 @@ it uses:
     - **history-substring-search**
         - if you start typing in any previous command (part of it) and hit UP key then the similar one will be shown
 
-##Other (useful) features
+# Other (useful) features
 - no need to type **cd** to change directory
     - you can simply type in the correct folder name and press ENTER to... well... ENTER to the directory
     - this is same for leaving a directory as well
