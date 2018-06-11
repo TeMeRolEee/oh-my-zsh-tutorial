@@ -71,6 +71,16 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# Functions
+
+# tre is a shorthand for tree with hidden files and color enabled, ignoring
+# the .git directory, listing directories first. The output gets piped into
+# less with options to preserve color and line numbers, unless the output is
+# small enough for one screen.
+function tre() {
+  tree -aC -I '.git|node_modules' --dirsfirst "$@" | less -FRNX;
+}
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -95,5 +105,5 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
