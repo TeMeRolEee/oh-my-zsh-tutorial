@@ -7,7 +7,7 @@ The tutorial of how to install oh-my-zsh
 2. Verify installation:
     - `zsh --version`
 3. You need to make it your default shell:
-    - _sudo chsh -s $(which zsh)_
+    - ```chsh -s $(which zsh)```
 4. You need to log out and login:
     - Test that it worked
         - `echo $SHELL`
@@ -26,16 +26,25 @@ The tutorial of how to install oh-my-zsh
         ```bash
             sh -c "$wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)
         ```
+6. Download the **.zshrc** file to your HOME directory
+    - If it's done change the **USER** part to yours:
+
+        ```export ZSH=/home/<USER>/.oh-my-zsh```
+
+        It will look something like this:
+
+        ```export ZSH=/home/theuserijusttyped/.oh-my-zsh```
+
 -----
 
 # OPTIONAL PART
-6. Plugins:
+7. Plugins:
     - You can use the _.zshrc_ file I uploaded to github
     it uses:
         - **git**
             - adds a lot of aliases, see [here](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git)
         - **sudo**
-            - if you forgot to write `sudo` before some command you can easily put it by pressing the ESC key **twice**
+            - if you forgot to write `sudo` before some command you can easily put it by pressing the **ESC** key **twice**
         - **docker**
             - gives autocomplete support
         - **docker-compose**
