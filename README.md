@@ -16,15 +16,10 @@ The tutorial of how to install oh-my-zsh
         - `$SHELL --version`
         Expected result is _zsh 5.4.2_
 5. Installing oh-my-zsh:
-    - You can use _curl_ or _wget_
+    - You can use _curl_
         - via curl
         ```bash
             sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-        ```
-
-        - via wget
-        ```bash
-            sh -c "$wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)
         ```
 6. Download the **.zshrc** file to your HOME directory
     - If it's done change the **USER** part to yours:
